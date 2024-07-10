@@ -16,6 +16,16 @@ body {
 
 img {
     display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
 
 header {
@@ -28,6 +38,7 @@ header {
     z-index: 1;
     margin-bottom: 30px;
     height: 80px;
+    color: white;
 }
 
 
@@ -46,14 +57,34 @@ header {
     margin: 0 auto;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.col {
+    flex-basis: calc(100%/3);
+}
+
 /* Header */
 .navbar {
     display: flex;
     height: 100%;
+    padding: 10px 0;
     align-items: center;
 }
 
 .navbar>div {
-    border: 2px dashed white;
+    /* border: 2px dashed white; */
     flex-basis: calc(100%/3);
+}
+
+.navbar-right ul {
+    justify-content: flex-end;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 10px;
 }
