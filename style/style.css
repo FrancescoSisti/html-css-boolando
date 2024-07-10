@@ -1,3 +1,7 @@
+:root {
+    --orange: #ff6900;
+}
+
 /* Reset */
 * {
     margin: 0;
@@ -5,6 +9,51 @@
     box-sizing: border-box;
 }
 
+/* Generics */
+body {
+    font-family: sans-serif;
+}
+
+img {
+    display: block;
+}
+
+header {
+    background-color: var(--orange);
+    box-shadow: 0 1px 3px #666;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    margin-bottom: 30px;
+    height: 80px;
+}
+
+
+/* Utils */
 .flex {
     display: flex;
+}
+
+#logo {
+    height: 30px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.navbar {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.navbar>div {
+    border: 2px dashed white;
+    flex-basis: calc(100%/3);
 }
